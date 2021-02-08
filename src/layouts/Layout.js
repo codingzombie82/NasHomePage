@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Container } from 'reactstrap';
 import Footer from './Footer';
+import Header from './Header';
 import { NavMenu } from './NavMenu';
 
 class Layout extends Component {
@@ -9,10 +9,11 @@ class Layout extends Component {
     render() {
         return (
             <div>
+                <Header />
                 <NavMenu />
-                <Container>
-                    {this.props.children}
-                </Container>
+                {/* <Container> */}
+                {this.props.children}
+                {/* </Container> */}
                 <Footer />
             </div>
         );
